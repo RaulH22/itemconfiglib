@@ -4,6 +4,18 @@ A lightweight and flexible library for loading and validating custom item config
 
 ---
 
+## 📖 Learn More
+
+Full documentation with detailed explanations and advanced examples is available in the [project wiki](https://github.com/RaulH22/ItemConfigLib/wiki).
+
+Includes:
+- YAML syntax and structure
+- Parameter breakdown for all supported keys
+- Advanced use cases with attributes, effects, and more
+- Frequently Asked Questions (FAQ)
+
+---
+
 ## ✨ Features
 
 - ✅ Simple YAML-based item configuration
@@ -21,6 +33,37 @@ A lightweight and flexible library for loading and validating custom item config
 ```xml
 # TODO
 ````
+
+* * *
+
+🔑 Supported YAML Keys
+----------------------
+
+| Key | Type | Description |
+| --- | --- | --- |
+| `material` | String | Bukkit `Material` name |
+| `name` | String | Display name (supports color codes) |
+| `lore` | List | Item lore lines |
+| `enchantments` | List | Format: `enchant level` |
+| `attributes` | List | Format: `attribute operation value [slot]` |
+| `flags` | List | Bukkit `ItemFlag` enums |
+| `unbreakable` | Boolean | Marks the item as unbreakable |
+| `custommodeldata` | Integer | Custom model data for resource pack support |
+| `color` | String | RGB color for leather armor (e.g. `255,0,0`) |
+| `base_potion` | String | Base potion type |
+| `potion_effects` | List | Custom potion effects |
+| `firework` | List | Firework effect configs |
+| `firework_power` | Integer | Power level of firework |
+| `patterns` | List | Banner pattern entries |
+| `datacontainer` | List | PDC entries: `namespace:key type value` |
+| `hide_all_attributes` | Boolean | Hides all item flags |
+| `hide` | List | Specific flags to hide |
+| `texture` | String | Base64 head texture |
+| `owner` | String | Head owner (player name) |
+| `skull_uuid` | String | UUID for head owner |
+| `book` | Section | For written books (title, author, pages) |
+| `trim` | Section | Armor trim (1.20+): `material`, `pattern` |
+| `amount` | Integer | Item amount |
 
 * * *
 
@@ -59,37 +102,6 @@ epic_sword:
 ```java
 # TODO
 ```
-
-* * *
-
-🔑 Supported YAML Keys
-----------------------
-
-| Key | Type | Description |
-| --- | --- | --- |
-| `material` | String | Bukkit `Material` name |
-| `name` | String | Display name (supports color codes) |
-| `lore` | List | Item lore lines |
-| `enchantments` | List | Format: `enchant level` |
-| `attributes` | List | Format: `attribute operation value [slot]` |
-| `flags` | List | Bukkit `ItemFlag` enums |
-| `unbreakable` | Boolean | Marks the item as unbreakable |
-| `custommodeldata` | Integer | Custom model data for resource pack support |
-| `color` | String | RGB color for leather armor (e.g. `255,0,0`) |
-| `base_potion` | String | Base potion type |
-| `potion_effects` | List | Custom potion effects |
-| `firework` | List | Firework effect configs |
-| `firework_power` | Integer | Power level of firework |
-| `patterns` | List | Banner pattern entries |
-| `datacontainer` | List | PDC entries: `namespace:key type value` |
-| `hide_all_attributes` | Boolean | Hides all item flags |
-| `hide` | List | Specific flags to hide |
-| `texture` | String | Base64 head texture |
-| `owner` | String | Head owner (player name) |
-| `skull_uuid` | String | UUID for head owner |
-| `book` | Section | For written books (title, author, pages) |
-| `trim` | Section | Armor trim (1.20+): `material`, `pattern` |
-| `amount` | Integer | Item amount |
 
 * * *
 
