@@ -124,18 +124,6 @@ itemconfiglib/
 
 * * *
 
-👥 Contributing
----------------
-
-*   Pull requests are welcome!
-    
-*   Open issues for bugs, suggestions, or improvements.
-    
-*   Star the repo if you like the project ⭐
-    
-
-* * *
-
 📜 License
 ----------
 
